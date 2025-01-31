@@ -23,7 +23,7 @@ pipeline {
             steps{
                 sh '''
                     echo "Test Stage
-                    find . -maxdepth 1 -name "index.html" | grep -q 
+                    npm test
                 '''
             }
         }
