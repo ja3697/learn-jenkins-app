@@ -21,7 +21,10 @@ pipeline {
         }
         stage('Test'){
             steps{
-                sh 'echo "Test Stage"'
+                sh '''
+                    echo "Test Stage
+                    find . -maxdepth 1 -name "index.html" | grep -q 
+                '''
             }
         }
     }
